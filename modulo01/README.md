@@ -54,6 +54,36 @@ O sistema lógico clássico repousa sobre três leis fundamentais do pensamento 
 Toda proposição verdadeira é sempre verdadeira. Um conceito ou definição deve permanecer constante ao longo do mesmo raciocínio (Marietto, 2013).
 *   **Representação formal:** $\vDash p \to p$ e $\vDash p \leftrightarrow p$.
 
+<ul>
+
+$\vDash p \to p$<br>
+Leitura direta: "Acarreta semanticamente p implica p"<br>
+Leitura conceitual: "A fórmula 'p implica p' é uma 
+verdade lógica" (ou uma tautologia).
+
+| $p$ | $p \to p$ |
+|---|---|
+| V | <center>V</center> |
+| F | <center>F</center> |
+
+
+$\vDash p \leftrightarrow p$<br>
+Leitura direta: "Acarreta semanticamente p se e somente se p"<br>
+Leitura conceitual: "A fórmula 'p se e somente se p' é uma verdade lógica" (ou uma tautologia).
+
+| $p$ | $p \Leftrightarrow p$ |
+|---|---|
+| V | <center>V</center> |
+| F | <center>F</center> |
+
+
+</ul>
+
+Obs.: ⊨ representa a consequência semântica ou acarretamento semântico (em inglês, entailment ou models). Ele é amplamente utilizado na lógica matemática e na lógica filosófica para indicar que uma fórmula ou proposição é verdadeira em todas as interpretações ou modelos em que um conjunto de premissas é verdadeiro
+
+
+
+
 ### II. Princípio da Não Contradição
 Nenhuma proposição pode ser verdadeira e falsa simultaneamente sob o mesmo aspecto. Dito de outra forma, dentre duas proposições contraditórias (onde uma é a negação da outra), pelo menos uma delas é necessariamente falsa (Marietto, 2013).
 *   **Representação formal:** $\vDash \neg(p \land \neg p)$.
