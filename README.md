@@ -1,4 +1,4 @@
-# Introducao-a-logica
+# Introdução à Lógica
 Compreensão da lógica como a ciência que estuda a natureza do raciocínio, do conhecimento e os princípios e métodos de inferência.
 
 ## Guia de Referência de Estudos
