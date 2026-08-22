@@ -22,7 +22,7 @@ Clique em cada módulo abaixo para obter uma breve descrição do conteúdo e ac
 
 Este módulo é dedicado à compreensão conceitual e filosófica da lógica e à definição de seus constituintes mínimos. Aborda as bases teóricas, a diferenciação exata entre meras sentenças da linguagem natural e proposições lógicas bivalentes, além do tratamento de sinonímia e ambiguidades. Também introduz os três princípios que regem o pensamento clássico.
 
-👉 **[Acesse o material completo do Módulo 1](./01-fundamentos-e-conceitos/README.md)**
+👉 **[Acesse o material completo do Módulo 1](./Modulo01/README.md)**
 
 
 ## 📂 Módulo 2: Cálculo Proposicional e Sintaxe
