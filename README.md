@@ -18,7 +18,7 @@ Bem-vindo ao repositório de referência de estudos sobre **Lógica Clássica Pr
 Este módulo é dedicado à compreensão conceitual e filosófica da lógica e à definição de seus constituintes mínimos.
 
 ### 1. O que é Lógica?
-A lógica é a ciência que investiga os princípios e métodos de inferência (Mortari, 2016). Seu objeto principal de estudo é determinar em que condições certas conclusões se seguem (ou não) de um conjunto de suposições ou premissas (Mortari, 2016). Trata-se do estudo formal da natureza do raciocínio e da estruturação abstrata do conhecimento (Mortari, 2016).
+A lógica é a ciência que investiga os princípios e métodos de inferência. Seu objeto principal de estudo é determinar em que condições certas conclusões se seguem (ou não) de um conjunto de suposições ou premissas. Trata-se do estudo formal da natureza do raciocínio e da estruturação abstrata do conhecimento (Mortari, 2016).
 
 ### 2. Sentenças vs. Proposições
 Nem toda sentença emitida na linguagem verbal constitui uma proposição:
