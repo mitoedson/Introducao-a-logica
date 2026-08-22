@@ -1,8 +1,7 @@
 # Introducao-a-logica
-
-## Guia de Referência de Estudos
 Compreensão da lógica como a ciência que estuda a natureza do raciocínio, do conhecimento e os princípios e métodos de inferência.
 
+## Guia de Referência de Estudos
 Bem-vindo ao repositório de referência de estudos sobre **Lógica Clássica Proposicional, Técnicas de Demonstração e Introdução a Sistemas Não-Clássicos**. Este roteiro serve de base para estruturar um repositório no GitHub completo, organizado em módulos de aprendizado progressivo, fundamentado diretamente nos materiais didáticos de Lógica Básica.
 
 ## 🗺️ Sumário
