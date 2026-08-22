@@ -1,11 +1,11 @@
 # 📂 Módulo 1: Fundamentos e Conceitos Iniciais
 
-Este material de referência apresenta os conceitos introdutórios e os pilares filosóficos e matemáticos que sustentam a **Lógica Proposicional Clássica** (Mortari, 2016; Marietto, 2013).
+Este material de referência apresenta os conceitos introdutórios e os pilares filosóficos e matemáticos que sustentam a **Lógica Proposicional Clássica**.
 
 ---
 
 ## 1. O que é Lógica?
-A lógica é o estudo sobre a natureza do raciocínio, do conhecimento e da estruturação abstrata do pensamento (Mortari, 2016). Como disciplina científica, ela investiga os princípios e métodos de inferência, com o objetivo principal de determinar sob quais condições certas conclusões se seguem (são consequências lógicas) de um conjunto de premissas dadas a priori (Mortari, 2016; Beraldo-de-Araújo, 2016).
+A lógica é o estudo sobre a natureza do raciocínio, do conhecimento e da estruturação abstrata do pensamento. Como disciplina científica, ela investiga os princípios e métodos de inferência, com o objetivo principal de determinar sob quais condições certas conclusões se seguem (são consequências lógicas) de um conjunto de premissas dadas a priori (Mortari, 2016; Beraldo-de-Araújo, 2016).
 
 O foco da lógica formal está na **forma do argumento** e no encadeamento de seus conceitos, e não no conteúdo empírico das sentenças individuais (Mortari, 2016; Beraldo-de-Araújo, 2016).
 
