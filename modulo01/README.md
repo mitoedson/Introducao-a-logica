@@ -2,14 +2,11 @@
 
 Este material de referência apresenta os conceitos introdutórios e os pilares filosóficos e matemáticos que sustentam a **Lógica Proposicional Clássica** [8, 35, 214].
 
----
-
 ## 1. O que é Lógica?
 A lógica é o estudo sobre a natureza do raciocínio, do conhecimento e da estruturação abstrata do pensamento [35, 65, 215]. Como disciplina científica, ela investiga os princípios e métodos de inferência, com o objetivo principal de determinar sob quais condições certas conclusões se seguem (são consequências lógicas) de um conjunto de premissas dadas a priori [65, 100, 215]. 
 
 O foco da lógica formal está na **forma do argumento** e no encadeamento de seus conceitos, e não no conteúdo empírico das sentenças individuais [69, 113].
 
----
 
 ## 2. Sentenças vs. Proposições
 
@@ -37,7 +34,6 @@ Sentenças que não podem ser valoradas como verdadeiras ou falsas **não expres
 *   **Significado vs. Palavras:** A lógica preocupa-se apenas com o conteúdo semântico do enunciado, não com a ordem ou sequência das palavras [13]. Sentenças na voz ativa ("José comeu o bolo") e na voz passiva ("O bolo foi comido por José") expressam a **mesma proposição** [13, 43].
 *   **Ambiguidade:** Sentenças ambíguas (ex: "Eu vi José com uma luneta") não expressam proposições bem-definidas sem um contexto que clarifique o significado (se José usava a luneta ou se quem o viu a utilizava) [12, 13, 42].
 
----
 
 ## 3. Tipos de Proposições
 
@@ -48,7 +44,6 @@ As proposições são estruturadas em dois grandes grupos:
 2.  **Proposições Compostas (Moleculares ou Fórmulas):** São obtidas pela combinação de duas ou mais proposições simples conectadas por operadores ou conectivos lógicos [21, 22, 52]. Seu valor lógico final depende inteiramente dos valores-verdade de seus átomos componentes [22, 53].
     *   *Exemplo:* $p \land q$: "Mário foi ao cinema e Carlos foi ao teatro." [22, 54].
 
----
 
 ## 4. Os Três Princípios da Lógica Clássica
 
@@ -65,3 +60,8 @@ Nenhuma proposição pode ser verdadeira e falsa simultaneamente sob o mesmo asp
 ### III. Princípio do Terceiro Excluído
 Toda proposição ou é verdadeira ou é falsa, não havendo uma terceira possibilidade, meio-termo ou valor indeterminado [18, 48, 76]. Sustenta a visão de um mundo puramente bivalente [76, 77].
 *   **Representação formal:** $\vDash p \lor \neg p$ [3, 57, 92].
+
+
+
+
+
