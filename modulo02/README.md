@@ -3,25 +3,8 @@
 Este módulo detalha os aspectos formais de construção e representação matemática das sentenças.
 
 
-## 1. Conectivos Lógicos e Operações
+### 1. Alfabeto e a Sintaxe de Fórmulas Bem Formadas (FBF)
 
-Os conectivos realizam operações sobre proposições, modificando ou combinando seus valores lógicos de acordo com regras matemáticas bem-definidas (Martins, [201-]; Mortari, 2016). Na lógica clássica bivalente, essas operações funcionam como funções veritativas, onde o valor-verdade do enunciado composto é determinado unicamente pelos valores-verdade de suas partes componentes (Marietto, 2013; Mortari, 2016).
-
-Abaixo estão definidos os conectivos lógicos clássicos e suas respectivas regras de valoração semântica:
-
-| Operação | Conectivo Natural | Símbolo Proposicional | Regra de Valoração Semântica |
-| :--- | :--- | :---: | :--- |
-| **Negação** | não $p$ | $\sim p$ ou $
-eg p$ | Inverte o valor lógico da proposição de entrada (Mortari, 2016). |
-| **Conjunção** | $p$ e $q$ | $p \land q$ | Verdadeiro apenas se **ambos** os operandos forem verdadeiros (Mortari, 2016). |
-| **Disjunção Inclusiva** | $p$ ou $q$ | $p \lor q$ | Falso apenas se **ambos** os operandos forem falsos (Mortari, 2016). |
-| **Disjunção Exclusiva** | ou $p$, ou $q$ | $p \oplus q$ | Verdadeiro se os valores das proposições de entrada forem **diferentes** (Marietto, 2013). |
-| **Condicional (Implicação)** | se $p$ então $q$ | $p \to q$ | Falso unicamente se o antecedente ($p$) for V e o consequente ($q$) for F (Mortari, 2016). |
-| **Bicondicional (Equivalência)**| $p$ se e somente se $q$ | $p \leftrightarrow q$ | Verdadeiro apenas se ambos tiverem o **mesmo valor lógico** (Mortari, 2016). |
-
----
-
-## 2. Sintaxe de Fórmulas Bem Formadas (FBF)
 
 A lógica proposicional adota uma linguagem formalizada para evitar as ambiguidades inerentes às línguas naturais (Marietto, 2013). As fórmulas são construídas de modo indutivo e estruturado a partir de um alfabeto estrito (constituído por símbolos verdade, variáveis proposicionais, conectivos e símbolos de pontuação) (Martins, [201-]). 
 
@@ -31,55 +14,7 @@ Uma expressão é considerada uma **Fórmula Bem Formada (FBF)** se e somente se
 2.  **Passo da Negação:** Se $P$ é uma FBF, então $(\sim P)$ também é uma FBF.
 3.  **Passo dos Conectivos Binários:** Se $P$ e $Q$ são FBFs, então $(P \land Q)$, $(P \lor Q)$, $(P \to Q)$ e $(P \leftrightarrow Q)$ também são FBFs.
 
-### Comprimento de uma Fórmula ($COMP[H]$)
-O comprimento mede a complexidade indutiva de uma fórmula proposicional $H$, contando o número total de átomos e conectivos lógicos nela contidos, desconsiderando os parênteses (Martins, [201-]). É definido recursivamente (Martins, [201-]):
-*   Se $H$ é um símbolo proposicional ou símbolo verdade $	o COMP[H] = 1$.
-*   Se $H$ é uma negação da forma $\sim P 	o COMP[\sim P] = COMP[P] + 1$.
-*   Se $H$ é uma fórmula com operador binário da forma $(P \circ Q) 	o COMP[P \circ Q] = COMP[P] + COMP[Q] + 1$ (onde $\circ$ representa qualquer conectivo binário).
 
----
-
-## 3. Ordem de Precedência dos Operadores
-
-Para simplificar a leitura e evitar o excesso de parênteses de pontuação, as fórmulas lógicas podem omitir delimitadores desde que se respeite uma ordem fixa decrescente de precedência dos conectivos lógicos (Marietto, 2013; Martins, [201-]). Na ausência de parênteses, os conectivos devem ser avaliados de acordo com a seguinte hierarquia (Marietto, 2013; Martins, [201-]):
-
-1.  **Negação** ($\sim$ ou $
-eg$) — *Maior prioridade* (Marietto, 2013).
-2.  **Conjunção** ($\land$) e **Disjunção** ($\lor$) — *Prioridade intermediária* (Marietto, 2013).
-3.  **Condicional** ($	o$) — *Prioridade inferior* (Marietto, 2013).
-4.  **Bicondicional** ($\leftrightarrow$) — *Menor prioridade* (Marietto, 2013).
-
-Quando há conectivos de mesma prioridade em sequência, adota-se a regra de associatividade: as conjunções e disjunções associam-se à esquerda, enquanto os condicionais e bicondicionais associam-se à direita (Martins, [201-]).
-
----
-
-## Referências
-
-Em conformidade com as normas da Associação Brasileira de Normas Técnicas (**ABNT NBR 6023:2018** para referências e **ABNT NBR 10520:2023** para citações):
-
-*   MARIETTO, Maria das Graças Bruno. **Lógica Básica**: cálculo proposicional, tabelas-verdade, equivalências e inferências. Santo André: Universidade Federal do ABC, 2013. 1 recurso online (slides). Slides de aula da disciplina de Lógica Básica.
-*   MARTINS, Luiz Gustavo A. **Lógica proposicional e formas normais**. Uberlândia: Universidade Federal de Uberlândia, [201-]. 1 recurso online (apostila).
-*   MORTARI, Cezar A. **Introdução à lógica**. 2. ed. São Paulo: Editora Unesp, 2016. 512 p.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 1. Alfabeto e a Sintaxe de Fórmulas Bem Formadas (FBF)
-
-Assim como na língua portuguesa nem toda concatenação de letras forma uma palavra válida, na lógica proposicional existe um conjunto mínimo de regras que define se uma sequência de caracteres é uma **Fórmula Bem Formada (FBF)**.
 
 #### **O Alfabeto Formal**
 O alfabeto da lógica proposicional clássica é constituído por quatro grupos de símbolos:
@@ -117,7 +52,6 @@ Uma expressão é uma fórmula bem formada se, e somente se, puder ser derivada 
 5.  $((P \land Q) \lor (\neg P \land \neg Q))$ é uma fórmula pela **Regra 4.1** aplicada aos passos 2 e 4.  
 *(Demonstração concluída com sucesso)*.
 
----
 
 ### 2. Comprimento de Fórmula e Subfórmulas
 
@@ -155,7 +89,10 @@ O conjunto de subfórmulas representa todos os "pedaços válidos" que constitue
 
 ### 3. Conectivos Lógicos e Ordem de Precedência
 
-Na linguagem natural, expressamos relações lógicas por meio de conectivos. Na lógica clássica, essas conexões são representadas por funções veritativas (que determinam o valor final da sentença com base nas partes).
+
+Os conectivos realizam operações sobre proposições, modificando ou combinando seus valores lógicos de acordo com regras matemáticas bem-definidas (Martins, [201-]; Mortari, 2016). Na lógica clássica bivalente, essas operações funcionam como funções veritativas, onde o valor-verdade do enunciado composto é determinado unicamente pelos valores-verdade de suas partes componentes (Marietto, 2013; Mortari, 2016).
+
+Abaixo estão definidos os conectivos lógicos clássicos e suas respectivas regras de valoração semântica:
 
 #### **Tabela de Conectivos Lógicos e Comportamento Semântico**
 
@@ -169,20 +106,24 @@ Na linguagem natural, expressamos relações lógicas por meio de conectivos. Na
 | **Bicondicional** | $\leftrightarrow$ | Verdadeiro **apenas** se ambos tiverem o mesmo valor lógico. | "...se e somente se..." (dupla implicação) |
 
 #### **Regras de Precedência (Omissão de Parênteses)**
-Para evitar o uso excessivo de parênteses que dificulta a leitura das fórmulas lógicas, estabelecemos uma ordem fixa decrescente de precedência para os operadores:
+
+Para simplificar a leitura e evitar o excesso de parênteses de pontuação, as fórmulas lógicas podem omitir delimitadores desde que se respeite uma ordem fixa decrescente de precedência dos conectivos lógicos (Marietto, 2013; Martins, [201-]). Na ausência de parênteses, os conectivos devem ser avaliados de acordo com a seguinte hierarquia (Marietto, 2013; Martins, [201-]):
+
+
 1.  **Negação ($\neg$)** — *Maior prioridade*.
 2.  **Conjunção ($\land$) e Disjunção ($\lor$)** — *Prioridade intermediária*.
 3.  **Condicional ($\to$)** — *Prioridade inferior*.
 4.  **Bicondicional ($\leftrightarrow$)** — *Menor prioridade*.
 
 #### **Associatividade**
-Se conectivos de mesma precedência aparecerem em sequência, aplicamos as regras de associatividade:
+Quando há conectivos de mesma prioridade em sequência, adota-se a regra de associatividade: as conjunções e disjunções associam-se à esquerda, enquanto os condicionais e bicondicionais associam-se à direita (Martins, [201-]).
+
 *   $\land$ e $\lor$ associam-se **à esquerda** (ex: $P \land Q \land R$ equivale a $(P \land Q) \land R$).
 *   $\to$ e $\leftrightarrow$ associam-se **à direita** (ex: $P \to Q \to R$ equivale a $P \to (Q \to R)$).
 
 > 📝 **Exemplo de eliminação:** A fórmula $(((\neg P) \land Q) \to R)$ pode ser reescrita simplesmente como $\neg P \land Q \to R$. A negação é aplicada primeiro ao $P$, depois a conjunção une $\neg P$ e $Q$, e finalmente a implicação é calculada.
 
----
+
 
 ### Referências Bibliográficas (Padrão ABNT)
 
