@@ -11,7 +11,7 @@ A lógica proposicional adota uma linguagem formalizada para evitar as ambiguida
 #### **O Alfabeto Formal**
 O alfabeto da lógica proposicional clássica é constituído por quatro grupos de símbolos:
 1.  **Símbolos verdade:** `true` e `false`.
-2.  **Símbolos proposicionais (Variáveis):** Letras representativas como $P, Q, R, S, P_1, P_2 \dots$ (ou minúsculas como $p, q, r \dots$).
+2.  **Símbolos proposicionais (Variáveis):** Letras representativas como $P, Q, R, S, P_1, P_2 \dots$ (ou minúsculas como $p, q, r \dots$). Não há uma regra ou padrão que estabelece o uso restrito para cada um.
 3.  **Conectivos lógicos:** $\neg$ (negação), $\lor$ (ou inclusivo), $\land$ (e), $\to$ (implica) e $\leftrightarrow$ (equivalência).
 4.  **Símbolos de pontuação:** Parênteses $( e )$ para delimitar o escopo das operações.
 
@@ -34,9 +34,10 @@ Uma expressão é uma fórmula bem formada se, e somente se, puder ser derivada 
 ---
 
 #### 📝 **Exercício Resolvido 1: Demonstração Sintática**
-*Prove que a expressão $((P \land Q) \lor (\neg P \land \neg Q))$ é uma fórmula proposicional válida.*
+* Prove que a expressão $((P \land Q) \lor (\neg P \land \neg Q))$ é uma fórmula proposicional válida.*
 
 **Solução (aplicando as regras indutivas passo a passo):**
+
 1.  $P$ e $Q$ são fórmulas pela **Regra 2** (símbolos proposicionais).
 2.  $(P \land Q)$ é uma fórmula pela **Regra 4.2** aplicada ao passo 1.
 3.  $(\neg P)$ e $(\neg Q)$ são fórmulas pela **Regra 3** aplicada ao passo 1.
