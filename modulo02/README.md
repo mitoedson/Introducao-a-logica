@@ -8,14 +8,6 @@ Este módulo detalha os aspectos formais de construção e representação matem
 
 A lógica proposicional adota uma linguagem formalizada para evitar as ambiguidades inerentes às línguas naturais (Marietto, 2013). As fórmulas são construídas de modo indutivo e estruturado a partir de um alfabeto estrito (constituído por símbolos verdade, variáveis proposicionais, conectivos e símbolos de pontuação) (Martins, [201-]). 
 
-Uma expressão é considerada uma **Fórmula Bem Formada (FBF)** se e somente se puder ser gerada pela aplicação recursiva das seguintes regras sintáticas (Marietto, 2013; Martins, [201-]; Mortari, 2016):
-
-1.  **Base:** Todo símbolo verdade ($true$, $false$) e todo símbolo proposicional (variável atômica como $p, q, r, \dots$) é uma FBF.
-2.  **Passo da Negação:** Se $P$ é uma FBF, então $(\sim P)$ também é uma FBF.
-3.  **Passo dos Conectivos Binários:** Se $P$ e $Q$ são FBFs, então $(P \land Q)$, $(P \lor Q)$, $(P \to Q)$ e $(P \leftrightarrow Q)$ também são FBFs.
-
-
-
 #### **O Alfabeto Formal**
 O alfabeto da lógica proposicional clássica é constituído por quatro grupos de símbolos:
 1.  **Símbolos verdade:** `true` e `false`.
