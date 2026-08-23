@@ -31,7 +31,7 @@ Sentenças que não podem ser valoradas como verdadeiras ou falsas **não expres
 5.  **Auto-referentes (paradoxos lógicos):**    Sentenças que se referem ao próprio valor lógico, ou seja, faz uma afirmação sobre si mesma, impossibilitando uma valoração sem contradição (ex: "Esta sentença é falsa").
 <a href="exercicios_paradoxos_logicos.md">(Ir para exercícios clássicos sobre paradoxos lógicos)</a>
 
-6.  **Sentenças Abertas:** Sentenças que contêm variáveis indefinidas cujo valor lógico depende de uma atribuição externa (ex: "$x$ é ímpar").
+6.  **Sentenças Abertas:** Sentenças que contêm variáveis indefinidas cujo valor lógico depende de uma atribuição externa (ex: "x é ímpar").
 
 ### Tratamento de Ambiguidades e Sinonímia
 *   **Significado vs. Palavras:** A lógica preocupa-se apenas com o conteúdo semântico do enunciado, não com a ordem ou sequência das palavras. Sentenças na voz ativa ("José comeu o bolo") e na voz passiva ("O bolo foi comido por José") expressam a **mesma proposição** (Mortari, 2016).
