@@ -1,4 +1,4 @@
-# 📂 Módulo 2: Cálculo Proposicional e Sintaxe
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;# 📂 Módulo 2: Cálculo Proposicional e Sintaxe
 
 Este módulo detalha os aspectos formais de construção e representação matemática das sentenças.
 
@@ -55,6 +55,60 @@ O comprimento mede a complexidade estrutural de uma fórmula $H$ contando seus �
 *   Se $H$ é um símbolo proposicional ou verdade, então **$COMP[H] = 1$**.
 *   Se a fórmula é uma negação $\neg H$, então **$COMP[\neg H] = COMP[H] + 1$**.
 *   Se a fórmula possui um conectivo binário $(P \circ Q)$, então **$COMP[P \circ Q] = COMP[P] + COMP[Q] + 1$**.
+
+Calcular o comprimento de uma fórmula lógica permite medir o seu tamanho sintático de forma precisa.
+
+O objetivo principal é viabilizar demonstrações por indução matemática sobre a estrutura das fórmulas e analisar o custo computacional de algoritmos que processam expressões lógicas.
+
+A definição formal do comprimento — frequentemente denotado como c(H), COMP(H) ou len(H) — funciona da seguinte maneira:
+
+1. Caso Base (Átomos / Variáveis)Se a fórmula é uma variável proposicional ou constante ($P, Q, R$):
+
+        c(P) = 1
+
+2. Passo Indutivo (Conectivos Lógicos)Se as fórmulas H e G já possuem comprimentos definidos:
+
+* Negação ($\neg H$): 
+
+    $c(\neg H)=c(H)+1$ 
+
+    (O conectivo $\neg$ contribui com 1.)
+
+* Conjunção (H $\wedge$ G):    
+  
+    $c(H \land G)=c(H)+c(G)+1$
+  
+   (O conectivo $\land$ contribui com 1).
+
+* Disjunção (H $\vee$ G): 
+
+    $c(H \lor G)=c(H)+c(G)+1$
+    
+    (O conectivo $\lor$ contribui com 1)
+
+* Implicação (H $\rightarrow$ G):
+
+    $c(H \rightarrow G)=c(H)+c(G)+1$
+        
+    (O conectivo $\rightarrow$ contribui com 1).
+
+* Biimplicação (H $\leftrightarrow$ G):
+
+    $c(H \leftrightarrow G)=c(H)+c(G)+1$
+        
+    (O conectivo $\leftrightarrow$ contribui com 1).
+
+
+
+
+Principais Objetivos
+
+* Indução Estrutural: Fornece uma base numérica clara para provar propriedades de todas as fórmulas lógicas usando indução no comprimento $n$.
+
+* Análise de Algoritmos: Ajuda a estimar o tempo de processamento e o uso de memória em programas que avaliam ou traduzem expressões lógicas.
+
+* Otimização de Fórmulas: Permite comparar o tamanho de diferentes expressões equivalentes para encontrar a forma mais simples ou curta.
+
 
 #### 📝 **Exercício Resolvido 2: Cálculo de Comprimento**
 * Calcule o comprimento da fórmula $H = ((P \land Q) \lor R)$.*
