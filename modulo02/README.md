@@ -64,7 +64,7 @@ O comprimento mede a complexidade estrutural de uma fórmula $H$ contando seus �
 *   Se a fórmula possui um conectivo binário $(P \circ Q)$, então **$COMP[P \circ Q] = COMP[P] + COMP[Q] + 1$**.
 
 #### 📝 **Exercício Resolvido 2: Cálculo de Comprimento**
-*Calcule o comprimento da fórmula $H = ((P \land Q) \lor R)$.*
+*Calcule o comprimento da fórmula $$H = ((P \land Q) \lor R)$$.*
 
 **Solução:**
 $$ \begin{aligned}
