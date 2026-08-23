@@ -67,7 +67,7 @@ O comprimento mede a complexidade estrutural de uma fórmula $H$ contando seus �
 *Calcule o comprimento da fórmula $H = ((P \land Q) \lor R)$.*
 
 **Solução:**
-$$[\begin{aligned}
+$$\begin{aligned}
 COMP[((P \land Q) \lor R)] &= COMP[P \land Q] + COMP[R] + 1 \\
 &= (COMP[P] + COMP[Q] + 1) + COMP[R] + 1 \\
 &= (1 + 1 + 1) + 1 + 1 \\
