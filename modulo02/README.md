@@ -3,12 +3,6 @@
 Este módulo detalha os aspectos formais de construção e representação matemática das sentenças.
 
 
-# 📂 Módulo 2: Cálculo Proposicional e Sintaxe
-
-Este material de referência apresenta os aspectos formais de construção, análise estrutural e representação matemática das sentenças no âmbito da **Lógica Proposicional Clássica** (Marietto, 2013; Martins, [201-]; Mortari, 2016).
-
----
-
 ## 1. Conectivos Lógicos e Operações
 
 Os conectivos realizam operações sobre proposições, modificando ou combinando seus valores lógicos de acordo com regras matemáticas bem-definidas (Martins, [201-]; Mortari, 2016). Na lógica clássica bivalente, essas operações funcionam como funções veritativas, onde o valor-verdade do enunciado composto é determinado unicamente pelos valores-verdade de suas partes componentes (Marietto, 2013; Mortari, 2016).
