@@ -29,7 +29,7 @@ Este módulo é dedicado à compreensão conceitual e filosófica da lógica e �
 
 Este módulo detalha os aspectos formais de construção e representação matemática das sentenças. Estuda-se aqui o alfabeto do cálculo proposicional, a definição recursiva das Fórmulas Bem Formadas (FBF), as tabelas-verdade de valoração semântica dos conectivos e as regras estritas de precedência dos operadores para a eliminação correta de parênteses.
 
-👉 **[Acesse o material completo do Módulo 2](./02-calculo-proposicional-sintaxe/README.md)**
+👉 **[Acesse o material completo do Módulo 2](./modulo02/README.md)**
 
 
 ## 📂 Módulo 3: Propriedades Semânticas das Fórmulas
