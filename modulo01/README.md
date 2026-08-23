@@ -28,7 +28,9 @@ Sentenças que não podem ser valoradas como verdadeiras ou falsas **não expres
 2.  **Imperativas (ordens/pedidos):** Expressam ordens, conselhos ou solicitações (ex: "Estude para a prova!").
 3.  **Exclamativas:** Exteriorizam sentimentos ou emoções (ex: "Puxa!").
 4.  **Optativas:** Exprimem um desejo (ex: "Deus te acompanhe!").
-5.  **Auto-referentes (paradoxos lógicos):** Sentenças que se referem ao próprio valor lógico, impossibilitando uma valoração sem contradição (ex: "Esta sentença é falsa").
+5.  **Auto-referentes (paradoxos lógicos):**    Sentenças que se referem ao próprio valor lógico, ou seja, faz uma afirmação sobre si mesma, impossibilitando uma valoração sem contradição (ex: "Esta sentença é falsa").
+<a href="exercicios_paradoxos_logicos.md">(Ir para exercícios clássicos sobre paradoxos lógicos)</a>
+
 6.  **Sentenças Abertas:** Sentenças que contêm variáveis indefinidas cujo valor lógico depende de uma atribuição externa (ex: "$x$ é ímpar").
 
 ### Tratamento de Ambiguidades e Sinonímia
@@ -61,6 +63,8 @@ Leitura direta: "Acarreta semanticamente p implica p"<br>
 Leitura conceitual: "A fórmula 'p implica p' é uma 
 verdade lógica" (ou uma tautologia).
 
+#### Tabela verdade
+
 | $p$ | $p \to p$ |
 |---|---|
 | V | <center>V</center> |
@@ -71,6 +75,8 @@ $\vDash p \leftrightarrow p$<br>
 Leitura direta: "Acarreta semanticamente p se e somente se p"<br>
 Leitura conceitual: "A fórmula 'p se e somente se p' é uma verdade lógica" (ou uma tautologia).
 
+#### Tabela verdade
+
 | $p$ | $p \Leftrightarrow p$ |
 |---|---|
 | V | <center>V</center> |
@@ -79,18 +85,46 @@ Leitura conceitual: "A fórmula 'p se e somente se p' é uma verdade lógica" (o
 
 </ul>
 
-Obs.: ⊨ representa a consequência semântica ou acarretamento semântico (em inglês, entailment ou models). Ele é amplamente utilizado na lógica matemática e na lógica filosófica para indicar que uma fórmula ou proposição é verdadeira em todas as interpretações ou modelos em que um conjunto de premissas é verdadeiro
+Obs.: O símbolo ⊨ representa a consequência semântica ou acarretamento semântico (em inglês, entailment ou models). Ele é amplamente utilizado na lógica matemática e na lógica filosófica para indicar que uma fórmula ou proposição é verdadeira em todas as interpretações ou modelos em que um conjunto de premissas é verdadeiro. O símbolo $ \vDash $ garante que se as premissas forem verdadeiras, a conclusão obrigatoriamente também será verdadeira.
 
+Podemos dividir o uso dele em dois cenários:
 
+1. Quando existem premissas à esquerda $(A \vDash B )$ <br>
+"Sempre que A for verdadeiro, B também será". Não importa se A é falso em algumas linhas da tabela. O que importa é que nas linhas onde A é verdadeiro, B não pode ser falso.
+
+2. Quando NÃO existem premissas à esquerda $( \vDash B)$<br> 
+"A fórmula B é sempre verdadeira, sob qualquer condição". Como não há premissas exigindo nada, a fórmula da direita precisa ser uma verdade lógica pura (tautologia).
 
 
 ### II. Princípio da Não Contradição
 Nenhuma proposição pode ser verdadeira e falsa simultaneamente sob o mesmo aspecto. Dito de outra forma, dentre duas proposições contraditórias (onde uma é a negação da outra), pelo menos uma delas é necessariamente falsa (Marietto, 2013).
 *   **Representação formal:** $\vDash \neg(p \land \neg p)$.
 
+<ul>
+Leitura Direta (Símbolo por Símbolo): "Acarreta semanticamente não p e não p"<br>
+Leitura Conceitual (O Significado Lógico):"A fórmula 'não é o caso que p e não p' é uma verdade lógica". É uma tautologia que uma proposição não pode ser verdadeira e falsa ao mesmo tempo"
+</ul>
+
+
+#### Tabela verdade
+| $p$ | $\neg p$ | $p \wedge \neg p$ | $\neg (p \wedge \neg p)$ |
+|---|---|---|---|
+| V | <center>F</center> | <center>F</center> |    <center>V</center> |
+| F | <center>V</center> | <center>F</center> | <center>V</center> |
+
 ### III. Princípio do Terceiro Excluído
 Toda proposição ou é verdadeira ou é falsa, não havendo uma terceira possibilidade, meio-termo ou valor indeterminado. Sustenta a visão de um mundo puramente bivalente (Marietto, 2013).
 *   **Representação formal:** $\vDash p \lor \neg p$ .
+
+Leitura direta: "Acarreta semanticamente p ou não p"<br>
+Leitura conceitual: "A fórmula 'p ou não p' é uma verdade lógica" (ou uma tautologia).
+
+
+#### Tabela verdade
+| $p$ | $\neg p$ | $p \vee \neg p$ |
+|---|---|---|
+| V | <center>F</center> | <center>V</center> | 
+| F | <center>V</center> | <center>V</center> |
 
 
 ## 📚 Referências Bibliográficas
