@@ -36,7 +36,7 @@ Este módulo detalha os aspectos formais de construção e representação matem
 
 Neste módulo, analisa-se o comportamento das fórmulas proposicionais sob todas as suas possíveis atribuições de valores-verdade. Trata-se da classificação semântica das proposições moleculares em Tautologias (verdades universais), Contradições (fórmulas sempre falsas e inconsistentes) e Contingências (cujo valor-verdade depende de fatos empíricos externos).
 
-👉 **[Acesse o material completo do Módulo 3](./03-propriedades-semanticas/README.md)**
+👉 **[Acesse o material completo do Módulo 3](./modulo03/README.md)**
 
 
 ## 📂 Módulo 4: Equivalências Lógicas e Simplificação

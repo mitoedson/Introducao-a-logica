@@ -145,6 +145,74 @@ Abaixo estão definidos os conectivos lógicos clássicos e suas respectivas reg
 | **Condicional** | $\to$ | Falso **unicamente** se o antecedente for V e o consequente for F. | "se... então..." (implicação material) |
 | **Bicondicional** | $\leftrightarrow$ | Verdadeiro **apenas** se ambos tiverem o mesmo valor lógico. | "...se e somente se..." (dupla implicação) |
 
+#### Tabelas verdade
+
+#### 1. Negação (¬) — conectivo unário
+
+| p | ¬p |
+|---|----|
+| V | F  |
+| F | V  |
+
+Simplesmente inverte o valor de verdade.
+
+#### 2. Conjunção (∧) — "e"
+
+| p | q | p ∧ q |
+|---|---|-------|
+| V | V | V |
+| V | F | F |
+| F | V | F |
+| F | F | F |
+
+Só é **verdadeira quando ambas** as proposições são verdadeiras.
+
+#### 3. Disjunção (∨) — "ou" (inclusivo)
+
+| p | q | p ∨ q |
+|---|---|-------|
+| V | V | V |
+| V | F | V |
+| F | V | V |
+| F | F | F |
+
+Só é **falsa quando ambas** são falsas — ou seja, basta uma ser verdadeira.
+
+#### 4. Disjunção exclusiva (⊕ ou ∨) — "ou...ou" (opcional, alguns cursos usam)
+
+| p | q | p ⊕ q |
+|---|---|-------|
+| V | V | F |
+| V | F | V |
+| F | V | V |
+| F | F | F |
+
+Verdadeira quando os valores são **diferentes**.
+
+#### 5. Condicional / Implicação (→) — "se... então"
+
+| p | q | p → q |
+|---|---|-------|
+| V | V | V |
+| V | F | **F** |
+| F | V | V |
+| F | F | V |
+
+Só é **falsa** no caso em que o antecedente é verdadeiro e o consequente é falso. Esse é o caso que mais confunde no início — vale a pena decorar essa linha específica.
+
+#### 6. Bicondicional (↔) — "se e somente se"
+
+| p | q | p ↔ q |
+|---|---|-------|
+| V | V | V |
+| V | F | F |
+| F | V | F |
+| F | F | V |
+
+Verdadeira quando **ambas têm o mesmo valor** de verdade (ambas V ou ambas F).
+
+
+
 ### **Regras de Precedência (Omissão de Parênteses)**
 
 Para simplificar a leitura e evitar o excesso de parênteses de pontuação, as fórmulas lógicas podem omitir delimitadores desde que se respeite uma ordem fixa decrescente de precedência dos conectivos lógicos (Marietto, 2013; Martins, [201-]). Na ausência de parênteses, os conectivos devem ser avaliados de acordo com a seguinte hierarquia (Marietto, 2013; Martins, [201-]):
