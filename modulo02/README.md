@@ -112,30 +112,19 @@ A definição formal do comprimento — frequentemente denotado como c(H), COMP(
     (O conectivo $\leftrightarrow$ contribui com 1).
 
 
-Principais Objetivos
+#### Principais Objetivos
 
-* Indução Estrutural: Fornece uma base numérica clara para provar propriedades de todas as fórmulas lógicas usando indução no comprimento $n$.
+* O grande uso do comprimento/complexidade é como ferramenta em provas por indução na complexidade da fórmula: você prova que uma propriedade vale para todas as fórmulas atômicas (caso base) e depois mostra que, se vale para A e B, também vale para ¬A, A∧B, etc. (passo indutivo). É assim que se demonstram teoremas gerais sobre toda a lógica proposicional (por exemplo, que toda fórmula tem uma única leitura, ou propriedades de valorações).
+
+* Existe também uma noção separada de "comprimento" como tamanho literal da string (contando cada símbolo, inclusive parênteses) — essa é mais usada em lógica computacional, quando se fala da complexidade de algoritmos como o SAT em função do tamanho da entrada.
+
 
 * Análise de Algoritmos: Ajuda a estimar o tempo de processamento e o uso de memória em programas que avaliam ou traduzem expressões lógicas.
 
 * Otimização de Fórmulas: Permite comparar o tamanho de diferentes expressões equivalentes para encontrar a forma mais simples ou curta.
 
 
-### 📝 **Exercício Resolvido 2: Cálculo de Comprimento**
-* Calcule o comprimento da fórmula $H = ((P \land Q) \lor R)$.
-
-**Solução:**
-
-$$ \begin{aligned}
-COMP[((P \land Q) \lor R)] &= COMP[P \land Q] + COMP[R] + 1 \\
-&= (COMP[P] + COMP[Q] + 1) + COMP[R] + 1 \\
-&= (1 + 1 + 1) + 1 + 1 \\
-&= 5
-\end{aligned} $$
-
-O comprimento da fórmula é **5**.
-
-#### **Subfórmulas**
+### **Subfórmulas**
 O conjunto de subfórmulas representa todos os "pedaços válidos" que constituem uma fórmula principal, incluindo ela mesma. Formalmente:
 1.  $H$ é subfórmula de $H$.
 2.  Se $H = (\neg P)$, então $P$ é subfórmula de $H$.
@@ -145,7 +134,6 @@ O conjunto de subfórmulas representa todos os "pedaços válidos" que constitue
 > No exemplo $H = \neg(P \lor \neg Q)$, as subfórmulas são:  
 > $\{\neg(P \lor \neg Q),\ (P \lor \neg Q),\ P,\ \neg Q,\ Q\}$.
 
----
 
 ## 3. Conectivos Lógicos e Ordem de Precedência
 
