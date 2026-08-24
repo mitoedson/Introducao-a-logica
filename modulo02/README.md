@@ -1,21 +1,21 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;# 📂 Módulo 2: Cálculo Proposicional e Sintaxe
+# 📂 Módulo 2: Cálculo Proposicional e Sintaxe
 
 Este módulo detalha os aspectos formais de construção e representação matemática das sentenças.
 
 
-### 1. Alfabeto e a Sintaxe de Fórmulas Bem Formadas (FBF)
+## 1. Alfabeto e a Sintaxe de Fórmulas Bem Formadas (FBF)
 
 
 A lógica proposicional adota uma linguagem formalizada para evitar as ambiguidades inerentes às línguas naturais (Marietto, 2013). As fórmulas são construídas de modo indutivo e estruturado a partir de um alfabeto estrito (constituído por símbolos verdade, variáveis proposicionais, conectivos e símbolos de pontuação) (Martins, [201-]). 
 
-#### **O Alfabeto Formal**
+### **O Alfabeto Formal**
 O alfabeto da lógica proposicional clássica é constituído por quatro grupos de símbolos:
 1.  **Símbolos verdade:** `true` e `false`.
 2.  **Símbolos proposicionais (Variáveis):** Letras representativas como $P, Q, R, S, P_1, P_2 \dots$ (ou minúsculas como $p, q, r \dots$). Não há uma regra ou padrão que estabelece o uso restrito para cada um.
 3.  **Conectivos lógicos:** $\neg$ (negação), $\lor$ (ou inclusivo), $\land$ (e), $\to$ (implica) e $\leftrightarrow$ (equivalência).
 4.  **Símbolos de pontuação:** Parênteses $( e )$ para delimitar o escopo das operações.
 
-#### **Regras de Construção Indutiva**
+### **Regras de Construção Indutiva**
 Uma expressão é uma fórmula bem formada se, e somente se, puder ser derivada a partir das seguintes regras recursivas:
 *   **Regra 1:** Todo símbolo verdade é uma fórmula.
 *   **Regra 2:** Todo símbolo proposicional é uma fórmula.
@@ -31,9 +31,8 @@ Uma expressão é uma fórmula bem formada se, e somente se, puder ser derivada 
 > $(P\ true\ \leftrightarrow)$ (conectivo posicionado incorretamente ao final)  
 > $\neg \land p \lor q$ (sequência inválida de conectivos).
 
----
 
-#### 📝 **Exercício Resolvido 1: Demonstração Sintática**
+### 📝 **Exercício Resolvido 1: Demonstração Sintática**
 * Prove que a expressão $((P \land Q) \lor (\neg P \land \neg Q))$ é uma fórmula proposicional válida.*
 
 **Solução (aplicando as regras indutivas passo a passo):**
@@ -46,11 +45,11 @@ Uma expressão é uma fórmula bem formada se, e somente se, puder ser derivada 
 *(Demonstração concluída com sucesso)*.
 
 
-### 2. Comprimento de Fórmula e Subfórmulas
+## 2. Comprimento de Fórmula e Subfórmulas
 
 Para analisar a complexidade de uma expressão lógica ou utilizá-la em provas de indução matemática, recorremos a duas definições formais: o comprimento da fórmula e o mapeamento de suas subfórmulas.
 
-#### **Comprimento de uma Fórmula ($COMP[H]$)**
+### **Comprimento de uma Fórmula ($COMP[H]$)**
 O comprimento mede a complexidade estrutural de uma fórmula $H$ contando seus átomos e conectivos lógicos, ignorando os parênteses de pontuação. É definido de forma indutiva:
 *   Se $H$ é um símbolo proposicional ou verdade, então **$COMP[H] = 1$**.
 *   Se a fórmula é uma negação $\neg H$, então **$COMP[\neg H] = COMP[H] + 1$**.
@@ -60,45 +59,57 @@ Calcular o comprimento de uma fórmula lógica permite medir o seu tamanho sint�
 
 O objetivo principal é viabilizar demonstrações por indução matemática sobre a estrutura das fórmulas e analisar o custo computacional de algoritmos que processam expressões lógicas.
 
-A definição formal do comprimento — frequentemente denotado como c(H), COMP(H) ou len(H) — funciona da seguinte maneira:
+A definição formal do comprimento — frequentemente denotado como c(H), COMP(H), comp(P) ou len(H) — funciona da seguinte maneira:
 
-1. Caso Base (Átomos / Variáveis)Se a fórmula é uma variável proposicional ou constante ($P, Q, R$):
+1. Caso Base (Átomos/Variáveis): Se a fórmula é uma variável (letra) proposicional ou constante ($P, Q, R, p, q,r$):
 
-        c(P) = 1
+        COMP(P) = 1
 
-2. Passo Indutivo (Conectivos Lógicos)Se as fórmulas H e G já possuem comprimentos definidos:
+
+    Quando a variável proposicional está sozinha, sem conectivos, o comprimento é 1.
+
+    Obs.: em alguns livros pode-se encontrar COMP(P)=0, assim como o uso das variáveis proposicionais maíusculas, ou minúsculas, desde que o autor convencione-as como notação. 
+
+---
+
+2. Passo Indutivo (Conectivos Lógicos).Se as fórmulas H e G já possuem comprimentos definidos:
 
 * Negação ($\neg H$): 
 
-    $c(\neg H)=c(H)+1$ 
+    $COMP(\neg H)=COM(H)+1$ 
 
-    (O conectivo $\neg$ contribui com 1.)
+    Como a variável proposicional vale 1, o +1 vem do conectivo de negação.
 
+---
 * Conjunção (H $\wedge$ G):    
   
-    $c(H \land G)=c(H)+c(G)+1$
+    $COM(H \land G)=COM(H)+COM(G)+1$
   
    (O conectivo $\land$ contribui com 1).
 
+---
+
 * Disjunção (H $\vee$ G): 
 
-    $c(H \lor G)=c(H)+c(G)+1$
+    $COM(H \lor G)=COM(H)+COM(G)+1$
     
     (O conectivo $\lor$ contribui com 1)
 
+---
+
 * Implicação (H $\rightarrow$ G):
 
-    $c(H \rightarrow G)=c(H)+c(G)+1$
+    $COM(H \rightarrow G)=COM(H)+COM(G)+1$
         
     (O conectivo $\rightarrow$ contribui com 1).
 
+---
+
 * Biimplicação (H $\leftrightarrow$ G):
 
-    $c(H \leftrightarrow G)=c(H)+c(G)+1$
+    $COM(H \leftrightarrow G)=COM(H)+COM(G)+1$
         
     (O conectivo $\leftrightarrow$ contribui com 1).
-
-
 
 
 Principais Objetivos
@@ -110,8 +121,8 @@ Principais Objetivos
 * Otimização de Fórmulas: Permite comparar o tamanho de diferentes expressões equivalentes para encontrar a forma mais simples ou curta.
 
 
-#### 📝 **Exercício Resolvido 2: Cálculo de Comprimento**
-* Calcule o comprimento da fórmula $H = ((P \land Q) \lor R)$.*
+### 📝 **Exercício Resolvido 2: Cálculo de Comprimento**
+* Calcule o comprimento da fórmula $H = ((P \land Q) \lor R)$.
 
 **Solução:**
 
@@ -136,7 +147,7 @@ O conjunto de subfórmulas representa todos os "pedaços válidos" que constitue
 
 ---
 
-### 3. Conectivos Lógicos e Ordem de Precedência
+## 3. Conectivos Lógicos e Ordem de Precedência
 
 
 Os conectivos realizam operações sobre proposições, modificando ou combinando seus valores lógicos de acordo com regras matemáticas bem-definidas (Martins, [201-]; Mortari, 2016). Na lógica clássica bivalente, essas operações funcionam como funções veritativas, onde o valor-verdade do enunciado composto é determinado unicamente pelos valores-verdade de suas partes componentes (Marietto, 2013; Mortari, 2016).
@@ -154,7 +165,7 @@ Abaixo estão definidos os conectivos lógicos clássicos e suas respectivas reg
 | **Condicional** | $\to$ | Falso **unicamente** se o antecedente for V e o consequente for F. | "se... então..." (implicação material) |
 | **Bicondicional** | $\leftrightarrow$ | Verdadeiro **apenas** se ambos tiverem o mesmo valor lógico. | "...se e somente se..." (dupla implicação) |
 
-#### **Regras de Precedência (Omissão de Parênteses)**
+### **Regras de Precedência (Omissão de Parênteses)**
 
 Para simplificar a leitura e evitar o excesso de parênteses de pontuação, as fórmulas lógicas podem omitir delimitadores desde que se respeite uma ordem fixa decrescente de precedência dos conectivos lógicos (Marietto, 2013; Martins, [201-]). Na ausência de parênteses, os conectivos devem ser avaliados de acordo com a seguinte hierarquia (Marietto, 2013; Martins, [201-]):
 
@@ -164,7 +175,7 @@ Para simplificar a leitura e evitar o excesso de parênteses de pontuação, as 
 3.  **Condicional ($\to$)** — *Prioridade inferior*.
 4.  **Bicondicional ($\leftrightarrow$)** — *Menor prioridade*.
 
-#### **Associatividade**
+### **Associatividade**
 Quando há conectivos de mesma prioridade em sequência, adota-se a regra de associatividade: as conjunções e disjunções associam-se à esquerda, enquanto os condicionais e bicondicionais associam-se à direita (Martins, [201-]).
 
 *   $\land$ e $\lor$ associam-se **à esquerda** (ex: $P \land Q \land R$ equivale a $(P \land Q) \land R$).
@@ -174,7 +185,7 @@ Quando há conectivos de mesma prioridade em sequência, adota-se a regra de ass
 
 
 
-### Referências Bibliográficas (Padrão ABNT)
+## Referências Bibliográficas (Padrão ABNT)
 
 *   MARIETTO, Maria das Graças Bruno. **Lógica Básica**: cálculo proposicional, tabelas-verdade, equivalências e inferências. Santo André: Universidade Federal do ABC, 2013. 1 recurso online (slides). 
 *   MARTINS, Luiz Gustavo A. **Lógica Proposicional**: sintaxe, semântica, propriedades e métodos de validação. Uberlândia: Universidade Federal de Uberlândia, [20--].
