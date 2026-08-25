@@ -50,28 +50,28 @@ Este módulo aborda as identidades e transformações lógicas entre fórmulas l
 
 O Módulo 5 estabelece a ponte entre a formalização matemática e a argumentação textual de linguagem natural. São apresentadas as definições rigorosas de premissas e conclusão, a distinção fundamental entre validade de forma e correção de conteúdo (argumentos adequados), e o mapeamento das falácias não-formais mais comuns que contaminam o discurso cotidiano.
 
-👉 **[Acesse o material completo do Módulo 5](./05-argumentacao-e-validade/README.md)**
+👉 **[Acesse o material completo do Módulo 5](./modulo05/README.md)**
 
 
 ## 📂 Módulo 6: Técnicas de Prova e Dedução Natural
 
 Módulo voltado a demonstrações formais avançadas sem tabelas-verdade. Explora-se a Dedução Natural com as regras clássicas primitivas (*Modus Ponens*, *Modus Tollens*, Silogismos Hipotéticos e Disjuntivos) e as técnicas fundamentais de Prova Direta e Prova Indireta (Redução ao Absurdo - RAA), indispensáveis para provar teoremas complexos em computação e matemática.
 
-👉 **[Acesse o material completo do Módulo 6](./06-tecnicas-de-prova-e-deducao/README.md)**
+👉 **[Acesse o material completo do Módulo 6](./modulo06/README.md)**
 
 
 ## 📂 Módulo 7: Lógica de Primeira Ordem (Predicados)
 
 Este módulo trata da expansão do cálculo proposicional clássico para examinar a estrutura interna das sentenças. Estuda-se a Lógica de Predicados, que introduz constantes de indivíduos, variáveis de objetos, predicados relacionais e os quantificadores Universal ($\forall$) e Existencial ($\exists$). Compreende-se aqui também a limitação do método clássico das tabelas-verdade em universos de discurso infinitos.
 
-👉 **[Acesse o material completo do Módulo 7](./07-logica-de-primeira-ordem/README.md)**
+👉 **[Acesse o material completo do Módulo 7](./modulo07/README.md)**
 
 
 ## 📂 Módulo 8: História, Filosofia e Sistemas Não-Clássicos
 
 Uma exploração profunda sobre de onde a lógica veio e para onde ela se dirige. O módulo traça a história desde os silogismos aristotélicos até a álgebra booleana e a computação moderna. Discute críticas filosóficas aos princípios clássicos, as anomalias da implicação material e introduz os sistemas não-clássicos complementares e alternativos (Lógicas Modais, Relevantes e Paraconsistentes) e a computação quântica.
 
-👉 **[Acesse o material completo do Módulo 8](./08-logicas-nao-classicas-e-filosofia/README.md)**
+👉 **[Acesse o material completo do Módulo 8](./modulo08/README.md)**
 
 
 ## 📚 Referências Bibliográficas
