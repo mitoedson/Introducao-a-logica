@@ -39,7 +39,7 @@ Não importa se p é V ou F, o resultado é sempre V. Isso é uma tautologia —
 
 #### Verificação pela tabela-verdade
 
-| p | ¬p | p ^ ¬p | ¬(p ^ ¬p) |
+| p | ¬p | p ∧ ¬p | ¬(p ∧ ¬p) |
 |---|----|--------|-----------|
 | V | F  | F | V | 
 | F | V  | F | V |
@@ -50,7 +50,7 @@ Não importa se p é V ou F, o resultado é sempre V. Isso é uma tautologia —
 
 #### Verificação pela tabela-verdade
 
-| p | q | p→q | (p→q)^p | [(p→q)^p]→q |
+| p | q | p→q | (p→q)^p | [(p→q)∧p]→q |
 |---|---|-----|------|----------------|
 | V | V | V  | V    | **V**          |
 | V | F | F  | F    | **V**          |
@@ -64,7 +64,7 @@ Não importa se p é V ou F, o resultado é sempre V. Isso é uma tautologia —
 
 #### Verificação pela tabela-verdade
 
-| p | q | p^q | ¬(p^q) | ¬p | ¬q | ¬p ∨ ¬q | ¬(p ∧ q) ↔ (¬p ∨ ¬q) |
+| p | q | p∧q | ¬(p∧q) | ¬p | ¬q | ¬p ∨ ¬q | ¬(p ∧ q) ↔ (¬p ∨ ¬q) |
 |---|---|-----|--------|----|----|---------|---------------|
 | V | V |  V  |   F    |  F |  F | F  |  V  |
 | V | F |  F  |   V    |  F |  V | V  |  V  |
@@ -103,6 +103,8 @@ Circuitos digitais: verificar se dois circuitos com portas lógicas diferentes p
 Programação: simplificar condições em código (if, while), otimizar expressões booleanas
 Verificação formal de software/hardware: provar que um sistema sempre se comporta de determinada forma, sem exceções
 Inteligência artificial e IA simbólica: sistemas de prova automática de teoremas usam tautologias como base
+
+<a href="exercicios_tautologia.md">(Ir para exercícios sobre Tautologia)</a>
 
 
 ## 2. Contradições
@@ -230,6 +232,18 @@ Varia entre F e V → contingência (diferente de p↔¬p, que é sempre F).
 --- 
 
 * (p ∧ q) ∨ r
+
+
+| p | q | r | p ∧ q | (p ∧ q) ∨ r |
+|---|---|---|-------|-------------|
+| V | V | V |   V   | V |
+| V | F | V |   F   | F |
+| F | V | V |   F   | F |
+| F | F | V |   F   | F |
+| V | V | F |   V   | F |
+| V | F | F |   F   | F |
+| F | V | F |   F   | F |
+| F | F | F |   F   | F |
 
 Uma fórmula com três variáveis também pode ser contingência — basta ter pelo menos uma linha V e uma linha F na tabela.
 

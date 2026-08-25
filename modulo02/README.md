@@ -223,6 +223,40 @@ Para simplificar a leitura e evitar o excesso de parênteses de pontuação, as 
 3.  **Condicional ($\to$)** — *Prioridade inferior*.
 4.  **Bicondicional ($\leftrightarrow$)** — *Menor prioridade*.
 
+#### **Mas e a disjunção exclusiva?**
+
+A disjunção exclusiva (XOR, geralmente representada por ∨ com um ponto embaixo, ⊻, ou às vezes Y) não tem uma posição universalmente padronizada na hierarquia de precedência, diferente dos cinco conectivos clássicos (¬, ∧, ∨, →, ↔).
+
+Os cinco operadores fundamentais (¬, ∧, ∨, →, ↔) têm precedência consolidada nos livros-texto clássicos de lógica (Copi, Mortari, Alcântara) e é isso que a maioria das bancas cobra. O XOR é um conectivo derivado — pode ser definido em termos dos outros:
+
+p ⊻ q ≡ ¬(p ↔ q) ≡ (p ∨ q) ∧ ¬(p ∧ q) ≡ (p ∧ ¬q) ∨ (¬p ∧ q)
+
+Como ele nasce de uma combinação de outros conectivos, diferentes materiais didáticos o posicionam de formas diferentes.
+
+Convenção mais comum (quando aparece em concursos)
+
+Quando bancas usam XOR explicitamente, a prática mais frequente é:
+
+¬ — maior prioridade
+∧, ∨, ⊻ — mesma prioridade intermediária (todos são "binários simples")
+→
+↔ — menor prioridade
+
+Ou seja, o XOR costuma ser tratado no mesmo nível de ∧ e ∨, já que estruturalmente ele é "mais um" conectivo de disjunção.
+
+Alternativa que também aparece (menos comum)
+
+Alguns materiais colocam o XOR entre → e ↔, próximo ao bicondicional, já que ele é literalmente a negação do bicondicional (⊻ ≡ ¬↔). Nessa lógica, faria sentido agrupá-los perto um do outro.
+
+Recomendação prática para prova
+
+Como não há consenso fechado sobre esse operador específico:
+
+Verifique se o edital/banca define isso explicitamente — algumas provas trazem a tabela de precedência própria na prova (principalmente Cebraspe)
+Na dúvida, desconfie de questões que dependam SÓ da precedência do XOR sem parênteses — bancas sérias evitam ambiguidade e costumam colocar parênteses quando usam XOR, exatamente por não haver convenção fixa
+Se aparecer sem parênteses, o mais seguro (e mais cobrado historicamente) é tratá-lo no mesmo nível de ∧/∨
+
+
 ### **Associatividade**
 Quando há conectivos de mesma prioridade em sequência, adota-se a regra de associatividade: as conjunções e disjunções associam-se à esquerda, enquanto os condicionais e bicondicionais associam-se à direita (Martins, [201-]).
 
