@@ -43,7 +43,7 @@ Neste módulo, analisa-se o comportamento das fórmulas proposicionais sob todas
 
 Este módulo aborda as identidades e transformações lógicas entre fórmulas lógicas distintas. Em vez de recorrer a tabelas-verdade gigantescas, o foco é a utilização prática do Método Dedutivo Algebrizado para a simplificação passo a passo de proposições complexas a partir de leis notáveis (como as Leis de De Morgan, Leis da Condicional e Regra de Clavius).
 
-👉 **[Acesse o material completo do Módulo 4](./04-equivalencias-e-simplificacao/README.md)**
+👉 **[Acesse o material completo do Módulo 4](./modulo04/README.md)**
 
 
 ## 📂 Módulo 5: Teoria da Argumentação e Validade
