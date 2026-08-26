@@ -240,7 +240,6 @@ https://brasil.elpais.com/brasil/2015/10/13/economia/1444760736_267255.html.
 Seis brasileiros concentram a mesma riqueza que a metade da população mais pobre
 https://brasil.elpais.com/brasil/2017/09/22/politica/1506096531_079176.html.
 
-<a href="exercicios_argumentos.md">Exercícios sobre Argumentos</a>
 
 ## 4. Estudo de Falácias Não-Formais
 
@@ -254,6 +253,9 @@ Falácias não-formais são erros de argumentação que ocorrem na linguagem nat
 * **Apelo à Piedade (Ad Misericordiam):** Tentar convencer os outros usando a emoção, a pena ou a culpa em vez de fatos racionais.
 * **Apelo à Ignorância (Ad Ignorantiam):** Afirmar que algo é verdade só porque nunca foi provado que é falso (ou vice-versa).
 * **Falsa Equivalência ou Ambiguidade:** Usar uma palavra com dois sentidos diferentes no mesmo raciocínio para criar uma conclusão sem nexo
+
+<a href="exercicios_argumentos.md">Exercícios sobre Argumentos</a>
+
 
 ## 📚 Referências Bibliográficas
 
