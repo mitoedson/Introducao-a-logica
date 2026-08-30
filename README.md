@@ -36,15 +36,20 @@ O Módulo 5 estabelece a ponte entre a formalização matemática e a argumenta�
 O Módulo 5 faz o mapeamento das falácias mais comuns que contaminam o discurso cotidiano.
 
 
-### [7. Técnicas de Prova e Dedução Natural](./modulo07/README.md)
+### [7. Regras de Inferência](./modulo07/README.md)
 
-Módulo voltado a demonstrações formais avançadas sem tabelas-verdade. Explora-se a Dedução Natural com as regras clássicas primitivas (*Modus Ponens*, *Modus Tollens*, Silogismos Hipotéticos e Disjuntivos) e as técnicas fundamentais de Prova Direta e Prova Indireta (Redução ao Absurdo - RAA), indispensáveis para provar teoremas complexos em computação e matemática.
+Módulo voltado a demonstrações formais avançadas sem tabelas-verdade. Explora-se a Dedução Natural com as regras clássicas primitivas (*Modus Ponens*, *Modus Tollens*, Silogismos Hipotéticos e Disjuntivos).
 
-### [8. Lógica de Primeira Ordem (Predicados)](./modulo08/README.md)
+### [8. Técnicas de Prova e Dedução Natural](./modulo08/README.md)
+
+Módulo voltado para as técnicas fundamentais de Prova Direta e Prova Indireta (Redução ao Absurdo - RAA), indispensáveis para provar teoremas complexos em computação e matemática.
+
+
+### [9. Lógica de Primeira Ordem (Predicados)](./modulo09/README.md)
 
 Este módulo trata da expansão do cálculo proposicional clássico para examinar a estrutura interna das sentenças. Estuda-se a Lógica de Predicados, que introduz constantes de indivíduos, variáveis de objetos, predicados relacionais e os quantificadores Universal ($\forall$) e Existencial ($\exists$). Compreende-se aqui também a limitação do método clássico das tabelas-verdade em universos de discurso infinitos.
 
-### [9. História, Filosofia e Sistemas Não-Clássicos](./modulo09/README.md)
+### [10. História, Filosofia e Sistemas Não-Clássicos](./modulo10/README.md)
 
 Uma exploração profunda sobre de onde a lógica veio e para onde ela se dirige. O módulo traça a história desde os silogismos aristotélicos até a álgebra booleana e a computação moderna. Discute críticas filosóficas aos princípios clássicos, as anomalias da implicação material e introduz os sistemas não-clássicos complementares e alternativos (Lógicas Modais, Relevantes e Paraconsistentes) e a computação quântica.
 
