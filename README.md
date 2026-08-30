@@ -6,73 +6,47 @@ Este repositório foi modularizado para facilitar a navegação. Cada diretório
 
 ## 🗺️ Sumário de Módulos
 
-Clique em cada módulo abaixo para obter uma breve descrição do conteúdo e acessar o material de estudo correspondente:
-
-*   [Módulo 1: Fundamentos e Conceitos Iniciais](#-módulo-1-fundamentos-e-conceitos-iniciais) — Sentenças, proposições e os três princípios clássicos.
-*   [Módulo 2: Cálculo Proposicional e Sintaxe](#-módulo-2-cálculo-proposicional-e-sintaxe) — Conectivos lógicos, Fórmulas Bem Formadas (FBF) e precedência.
-*   [Módulo 3: Propriedades Semânticas das Fórmulas](#-módulo-3-propriedades-semânticas-das-fórmulas) — Tautologias, contradições e contingências lógicas.
-*   [Módulo 4: Equivalências Lógicas e Simplificação](#-módulo-4-equivalências-lógicas-e-simplificação) — Leis de equivalência e o método dedutivo.
-*   [Módulo 5: Teoria da Argumentação e Validade](#-módulo-5-teoria-da-argumentação-e-validade) — Estrutura de argumentos, validade, correção e falácias.
-*   [Módulo 6: Técnicas de Prova e Dedução Natural](#-módulo-6-técnicas-de-prova-e-dedução-natural) — Regras de inferência, prova direta e redução ao absurdo.
-*   [Módulo 7: Lógica de Primeira Ordem (Predicados)](#-módulo-7-lógica-de-primeira-ordem-predicados) — Quantificadores, constantes, variáveis e predicados.
-*   [Módulo 8: História, Filosofia e Sistemas Não-Clássicos](#-módulo-8-história-filosofia-e-sistemas-não-clássicos) — Silogismos de Aristóteles, limites da lógica e sistemas não-clássicos.
-
-
-## 📂 Módulo 1: Fundamentos e Conceitos Iniciais
+### [1. Fundamentos e Conceitos Iniciais](./modulo01/README.md)
 
 Este módulo é dedicado à compreensão conceitual e filosófica da lógica e à definição de seus constituintes mínimos. Aborda as bases teóricas, a diferenciação exata entre meras sentenças da linguagem natural e proposições lógicas bivalentes, além do tratamento de sinonímia e ambiguidades. Também introduz os três princípios que regem o pensamento clássico.
 
-👉 **[Acesse o material completo do Módulo 1](./modulo01/README.md)**
 
 
-## 📂 Módulo 2: Cálculo Proposicional e Sintaxe
+### [2. Cálculo Proposicional e Sintaxe](./modulo02/README.md)
 
 Este módulo detalha os aspectos formais de construção e representação matemática das sentenças. Estuda-se aqui o alfabeto do cálculo proposicional, a definição recursiva das Fórmulas Bem Formadas (FBF), as tabelas-verdade de valoração semântica dos conectivos e as regras estritas de precedência dos operadores para a eliminação correta de parênteses.
 
-👉 **[Acesse o material completo do Módulo 2](./modulo02/README.md)**
 
-
-## 📂 Módulo 3: Propriedades Semânticas das Fórmulas
+### [3. Propriedades Semânticas das Fórmulas](./modulo03/README.md)
 
 Neste módulo, analisa-se o comportamento das fórmulas proposicionais sob todas as suas possíveis atribuições de valores-verdade. Trata-se da classificação semântica das proposições moleculares em Tautologias (verdades universais), Contradições (fórmulas sempre falsas e inconsistentes) e Contingências (cujo valor-verdade depende de fatos empíricos externos).
 
-👉 **[Acesse o material completo do Módulo 3](./modulo03/README.md)**
 
-
-## 📂 Módulo 4: Equivalências Lógicas e Simplificação
+### [4. Equivalências Lógicas e Simplificação](./modulo04/README.md)
 
 Este módulo aborda as identidades e transformações lógicas entre fórmulas lógicas distintas. Em vez de recorrer a tabelas-verdade gigantescas, o foco é a utilização prática do Método Dedutivo Algebrizado para a simplificação passo a passo de proposições complexas a partir de leis notáveis (como as Leis de De Morgan, Leis da Condicional e Regra de Clavius).
 
-👉 **[Acesse o material completo do Módulo 4](./modulo04/README.md)**
-
-
-## 📂 Módulo 5: Teoria da Argumentação e Validade
+### [5. Teoria da Argumentação e Validade](./modulo05/README.md)
 
 O Módulo 5 estabelece a ponte entre a formalização matemática e a argumentação textual de linguagem natural. São apresentadas as definições rigorosas de premissas e conclusão, a distinção fundamental entre validade de forma e correção de conteúdo (argumentos adequados), e o mapeamento das falácias não-formais mais comuns que contaminam o discurso cotidiano.
 
-👉 **[Acesse o material completo do Módulo 5](./modulo05/README.md)**
+
+### [6. Falácias ou Sofismas: Falácias Formais e Não Formais](./modulo06/README.md)
+
+O Módulo 5 faz o mapeamento das falácias mais comuns que contaminam o discurso cotidiano.
 
 
-## 📂 Módulo 6: Técnicas de Prova e Dedução Natural
+### [7. Técnicas de Prova e Dedução Natural](./modulo07/README.md)
 
 Módulo voltado a demonstrações formais avançadas sem tabelas-verdade. Explora-se a Dedução Natural com as regras clássicas primitivas (*Modus Ponens*, *Modus Tollens*, Silogismos Hipotéticos e Disjuntivos) e as técnicas fundamentais de Prova Direta e Prova Indireta (Redução ao Absurdo - RAA), indispensáveis para provar teoremas complexos em computação e matemática.
 
-👉 **[Acesse o material completo do Módulo 6](./modulo06/README.md)**
-
-
-## 📂 Módulo 7: Lógica de Primeira Ordem (Predicados)
+### [8. Lógica de Primeira Ordem (Predicados)](./modulo08/README.md)
 
 Este módulo trata da expansão do cálculo proposicional clássico para examinar a estrutura interna das sentenças. Estuda-se a Lógica de Predicados, que introduz constantes de indivíduos, variáveis de objetos, predicados relacionais e os quantificadores Universal ($\forall$) e Existencial ($\exists$). Compreende-se aqui também a limitação do método clássico das tabelas-verdade em universos de discurso infinitos.
 
-👉 **[Acesse o material completo do Módulo 7](./modulo07/README.md)**
-
-
-## 📂 Módulo 8: História, Filosofia e Sistemas Não-Clássicos
+### [9. História, Filosofia e Sistemas Não-Clássicos](./modulo09/README.md)
 
 Uma exploração profunda sobre de onde a lógica veio e para onde ela se dirige. O módulo traça a história desde os silogismos aristotélicos até a álgebra booleana e a computação moderna. Discute críticas filosóficas aos princípios clássicos, as anomalias da implicação material e introduz os sistemas não-clássicos complementares e alternativos (Lógicas Modais, Relevantes e Paraconsistentes) e a computação quântica.
-
-👉 **[Acesse o material completo do Módulo 8](./modulo08/README.md)**
-
 
 ## 📚 Referências Bibliográficas
 

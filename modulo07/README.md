@@ -1,30 +1,41 @@
-# 📂 Módulo 7: Lógica de Primeira Ordem (Predicados)
+# 📂 Módulo 6: Técnicas de Prova e Dedução Natural
 
-Este módulo trata da expansão do cálculo proposicional clássico para lidar com quantificadores e analisar a estrutura interna das sentenças.
-
-
-## 1. Limitações da Lógica Proposicional
-
-O cálculo proposicional trata as proposições atômicas de forma fechada e monolítica (Mortari, 2016). Ele é incapaz de analisar propriedades de objetos ou relações individuais (ex: não consegue deduzir de "Todo gato gosta de peixe" e "Miau é um gato" que "Miau gosta de peixe" sem reescrever tudo como átomos desligados) (Mortari, 2016).
+Módulo de demonstrações avançadas. O método de dedução natural evita a construção de tabelas-verdade excessivamente extensas para muitos átomos (onde $N$ variáveis necessitam de $2^N$ linhas de tabela) (Martins, 2012).
 
 
-## 2. Estrutura da Lógica de Predicados
+## 1. Regras de Inferência Clássicas (Primitivas)
 
-A lógica de primeira ordem decompõe a proposição em:
+As regras de inferência são esquemas clássicos estruturados de argumentos logicamente válidos (Marietto, 2013):
 
-*   **Indivíduos (Termos/Constantes):** Elementos específicos do universo de discurso ($a, b, c$) (Mortari, 2016).
-*   **Predicados:** Atributos ou propriedades atribuídas a indivíduos (ex: $P(x)$) (Mortari, 2016).
-*   **Quantificadores:**
-    *   **Universal ($orall$):** Assegura que todos os indivíduos do universo satisfazem o predicado ("Para todo") (Mortari, 2016).
-    *   **Existencial ($\exists$):** Assegura que há pelo menos um indivíduo que satisfaz o predicado ("Existe") (Mortari, 2016).
+*   **Modus Ponens (MP):**
+    $$P \to Q, \quad P \quad \vdash \quad Q$$ (Martins, 2012)
+*   **Modus Tollens (MT):**
+    $$P \to Q, \quad \sim Q \quad \vdash \quad \sim P$$ (Martins, 2012)
+*   **Silogismo Hipotético (SH):**
+    $$P \to Q, \quad Q \to R \quad \vdash \quad P \to R$$ (Martins, 2012)
+*   **Silogismo Disjuntivo (SD):**
+    $$P \lor Q, \quad \sim P \quad \vdash \quad Q$$ (Martins, 2012)
+*   **Conjunção (C):**
+    $$P, \quad Q \quad \vdash \quad P \land Q$$ (Martins, 2012)
+*   **Simplificação (S):**
+    $$P \land Q \quad \vdash \quad P$$ (Martins, 2012)
+*   **Adição (AD):**
+    $$P \quad \vdash \quad P \lor Q$$ (Martins, 2012)
 
 
-## 3. Limitação da Tabela-Verdade
+## 2. Técnicas de Prova Sintática
 
-No cálculo proposicional, as tabelas-verdade completas são perfeitamente capazes de decidir a validade de qualquer fórmula por ter tamanho finito de $2^N$ linhas (Mortari, 2016). Entretanto, na Lógica de Primeira Ordem, devido à presença de quantificadores lógicos operando sobre universos de discurso potencialmente infinitos (como o conjunto dos números naturais), o método das tabelas-verdade torna-se inaplicável (Mortari, 2016; Marietto, 2013).
+### Prova Direta
+Consiste em partir puramente do conjunto de hipóteses/premissas e, linha após linha, aplicar regras de equivalência e inferência básicas até derivar e registrar a conclusão final do teorema (Martins, 2012; Mortari, 2016).
+
+### Prova Indireta (Por Contradição / Redução ao Absurdo - RAA)
+1.  Introduz-se temporariamente a negação da conclusão desejada ($\sim Q$) como uma nova hipótese de trabalho (Martins, 2012; Mortari, 2016).
+2.  Realiza-se o cálculo proposicional até deduzir um absurdo ou contradição explícita da forma $B \land \sim B$ (Martins, 2012; Mortari, 2016).
+3.  Ao atingir o absurdo, descarta-se a hipótese temporária por contradizer os axiomas clássicos, provando que a conclusão $Q$ original é necessariamente verdadeira (Martins, 2012; Mortari, 2016).
 
 
 ## 📚 Referências Bibliográficas
 
 *   MARIETTO, Maria das Graças Bruno. **Lógica Básica**: cálculo proposicional, tabelas-verdade, equivalências e inferências. Santo André: Universidade Federal do ABC, 2013.
+*   MARTINS, Luiz Gustavo. **Apostila de Lógica Proposicional**: dedução natural, sintaxe e semântica. Santo André: Universidade Federal do ABC, 2012.
 *   MORTARI, Cezar A. **Introdução à lógica**. 2. ed. São Paulo: Editora Unesp, 2016.

@@ -241,19 +241,6 @@ Seis brasileiros concentram a mesma riqueza que a metade da população mais pob
 https://brasil.elpais.com/brasil/2017/09/22/politica/1506096531_079176.html.
 
 
-## 4. Estudo de Falácias Não-Formais
-
-Falácias não-formais são erros de argumentação que ocorrem na linguagem natural devido a falhas conceituais ou de relevância empírica das premissas (Marietto, 2013):
-
-*   **Espantalho (Strawman):** Consiste em distorcer ou simplificar excessivamente o argumento do oponente para poder atacá-lo com maior facilidade (Marietto, 2013).
-*   **Bola de Neve (Slope Escorregadio):** Alega-se, sem base causal sólida, que uma determinada ação desencadeará inevitavelmente um efeito cascata catastrófico (Marietto, 2013).
-*   **Apelo à Autoridade (*Argumentum ad Verecundiam*):** Validar uma conclusão apenas porque foi proferida por uma figura de autoridade, mesmo fora de sua área de especialidade (Marietto, 2013).
-*   **Apelo à Novidade (*Argumentum ad Novitatem*):** Afirmar que algo é superior ou correto unicamente por ser novo e recente (Marietto, 2013).
-* **Ataque à Pessoa (Ad Hominem):** Atacar a pessoa que fala em vez de discutir o argumento em si.
-* **Apelo à Piedade (Ad Misericordiam):** Tentar convencer os outros usando a emoção, a pena ou a culpa em vez de fatos racionais.
-* **Apelo à Ignorância (Ad Ignorantiam):** Afirmar que algo é verdade só porque nunca foi provado que é falso (ou vice-versa).
-* **Falsa Equivalência ou Ambiguidade:** Usar uma palavra com dois sentidos diferentes no mesmo raciocínio para criar uma conclusão sem nexo
-
 <a href="exercicios_argumentos.md">Exercícios sobre Argumentos</a>
 
 
@@ -262,3 +249,4 @@ Falácias não-formais são erros de argumentação que ocorrem na linguagem nat
 *   MARIETTO, Maria das Graças Bruno. **Lógica Básica**: cálculo proposicional, tabelas-verdade, equivalências e inferências. Santo André: Universidade Federal do ABC, 2013.
 *   MORTARI, Cezar A. **Introdução à lógica**. 2. ed. São Paulo: Editora Unesp, 2016.
 *   BERALDO-DE-ARAÚJO, Anderson. **Lógica Dedutiva**. São Bernardo do Campo: UFABC, 2016.
+
