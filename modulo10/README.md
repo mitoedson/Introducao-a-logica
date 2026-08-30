@@ -1,27 +1,30 @@
-# 📂 Módulo 8: História, Filosofia e Sistemas Não-Clássicos
+# 📂 Módulo 10: Lógica de Primeira Ordem (Predicados)
 
-Exploração das fronteiras do pensamento lógico clássico e suas evoluções modernas.
-
-
-## 1. Breve História da Lógica
-
-*   **Aristóteles de Estagira (384 – 322 a.C.):** Considerado o "pai da lógica" (Marietto, 2013). Sua obra reunida no livro ***Órganon*** ("ferramenta") introduziu a teoria clássica dos silogismos baseados em premissas categóricas (Marietto, 2013; Mortari, 2016).
-*   **Escola Megárico-Estóica:** Responsável pelo estudo pioneiro das conexões e condicionais proposicionais aplicadas a proposições completas (Crisipo e Diodoro Cronos) (Mortari, 2016).
-*   **Lógica Simbólica Contemporânea:** Desenvolvimento da álgebra lógica por George Boole no século XIX, que unificou lógica e matemática, pavimentando o caminho para o projeto de circuitos de computadores e portas lógicas modernas (Marietto, 2013).
+Este módulo trata da expansão do cálculo proposicional clássico para lidar com quantificadores e analisar a estrutura interna das sentenças.
 
 
-## 2. Paradoxos e Sistemas Não-Clássicos
+## 1. Limitações da Lógica Proposicional
 
-Sistemas lógicos contemporâneos que contestam, estendem ou eliminam os dogmas bivalentes clássicos:
+O cálculo proposicional trata as proposições atômicas de forma fechada e monolítica (Mortari, 2016). Ele é incapaz de analisar propriedades de objetos ou relações individuais (ex: não consegue deduzir de "Todo gato gosta de peixe" e "Miau é um gato" que "Miau gosta de peixe" sem reescrever tudo como átomos desligados) (Mortari, 2016).
 
-*   **Lógicas Relevantes:** Sistemas que exigem que o antecedente de uma implicação material tenha uma relação de significado e relevância estreita com o consequente, eliminando anomalias matemáticas do cálculo clássico como "se a Terra é plana, então o Sol é uma estrela" (Mortari, 2016).
-*   **Lógica Paraconsistente:** Desenvolvida para contornar o "princípio da explosão" (onde uma única contradição colapsa todo o sistema, tornando possível provar qualquer coisa). Ela abriga e tolera contradições locais sem inutilizar a teoria dedutiva (Marietto, 2013).
-*   **Computação Quântica e Limitações Físicas:** Na escala quântica, a propriedade física de sobreposição de estados (qubits que podem estar simultaneamente em estados de 0 e 1) desafia a bivalência estrita e empírica do princípio do terceiro excluído absoluto e da não-contradição mecânica macroscópica tradicional (Marietto, 2013).
-*   **Críticas à Identidade:** Filósofos dialéticos e físicos quânticos questionam o Princípio da Identidade absoluto, argumentando que a realidade é fluida e que entidades não permanecem imutáveis ou idênticas a si mesmas sob qualquer aspecto temporal ou físico (Marietto, 2013).
+
+## 2. Estrutura da Lógica de Predicados
+
+A lógica de primeira ordem decompõe a proposição em:
+
+*   **Indivíduos (Termos/Constantes):** Elementos específicos do universo de discurso ($a, b, c$) (Mortari, 2016).
+*   **Predicados:** Atributos ou propriedades atribuídas a indivíduos (ex: $P(x)$) (Mortari, 2016).
+*   **Quantificadores:**
+    *   **Universal ($orall$):** Assegura que todos os indivíduos do universo satisfazem o predicado ("Para todo") (Mortari, 2016).
+    *   **Existencial ($\exists$):** Assegura que há pelo menos um indivíduo que satisfaz o predicado ("Existe") (Mortari, 2016).
+
+
+## 3. Limitação da Tabela-Verdade
+
+No cálculo proposicional, as tabelas-verdade completas são perfeitamente capazes de decidir a validade de qualquer fórmula por ter tamanho finito de $2^N$ linhas (Mortari, 2016). Entretanto, na Lógica de Primeira Ordem, devido à presença de quantificadores lógicos operando sobre universos de discurso potencialmente infinitos (como o conjunto dos números naturais), o método das tabelas-verdade torna-se inaplicável (Mortari, 2016; Marietto, 2013).
 
 
 ## 📚 Referências Bibliográficas
 
-*   HAACK, Susan. **Filosofia das lógicas**. Tradução de Cezar A. Mortari e Luiz Henrique de A. Dutra. 2. ed. São Paulo: Editora Unesp, 2002.
 *   MARIETTO, Maria das Graças Bruno. **Lógica Básica**: cálculo proposicional, tabelas-verdade, equivalências e inferências. Santo André: Universidade Federal do ABC, 2013.
 *   MORTARI, Cezar A. **Introdução à lógica**. 2. ed. São Paulo: Editora Unesp, 2016.
